@@ -1,11 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>William First Website</title>
+    <link rel="stylesheet" href="src/style.css">
 </head>
+
 <body>
-    
+
+    <noscript>
+        Please enable javascript in the browser!
+    </noscript>
+
+    <!-- Template Body for Javascript Injection -->
+    <header class="container centered">
+        <h1>William Profile's</h1>
+        <hr>
+    </header>
+
+    <div class="container">
+        <blockquote class="centered">I&#x27;m William, currently a third year student as an Informatics Engineering
+            undergraduate of year
+            2018. Pleased to meet you 😄.
+        </blockquote>
+        <div class="content-container">
+            <div class="tab centered flex-wrapper">
+                <button id="nav-profile" class="tab-nav round" onclick="openTab(event,'tab-profile')">Profile</button>
+                <button id="nav-contact" class="tab-nav round" onclick="openTab(event,'tab-contact')">Contact
+                </button>
+                <button id="nav-education" class="tab-nav round"
+                    onclick="openTab(event,'tab-education')">Education</button>
+                <button id="nav-achievement" class="tab-nav round"
+                    onclick="openTab(event,'tab-achievement')">Achievement</button>
+                <button id="nav-others" class="tab-nav round" onclick="openTab(event,'tab-others')">Others</button>
+            </div>
+            <div id="tab-profile" class="tab-content">
+                <div class="grid-wrapper">
+                    <div class="grid-label">
+                        <span>Profile</span>
+                    </div>
+                    <div class="grid-content">
+                        Profile ...
+                    </div>
+                    <div class="grid-label">
+                        <span>Profile</span>
+                    </div>
+                    <div class="grid-content">
+                        Profile ...
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-contact" class="tab-content">
+                <div class="grid-wrapper">
+                    <div class="grid-label">
+                        <span>Contact Information</span>
+                    </div>
+                    <div class="grid-content">
+                        Contact Information ...
+                    </div>
+                    <div class="grid-label">
+                        <span>Contact Information</span>
+                    </div>
+                    <div class="grid-content">
+                        Contact Information ...
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-education" class="tab-content">
+                <div class="grid-wrapper">
+                    <div class="grid-label">
+                        <span>Education</span>
+                    </div>
+                    <div class="grid-content">
+                        Education ...
+                    </div>
+                    <div class="grid-label">
+                        <span>Education</span>
+                    </div>
+                    <div class="grid-content">
+                        Education ...
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-achievement" class="tab-content">
+                <div class="grid-wrapper">
+                    <div class="grid-label">
+                        <h3>Achievement</h3>
+                    </div>
+                    <div class="grid-content">
+                        <p>Achievement ...</p>
+                    </div>
+                    <div class="grid-label">
+                        <h3>Achievement</h3>
+                    </div>
+                    <div class="grid-content">
+                        <p>Achievement ...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-others" class="tab-content">
+                <div class="grid-wrapper">
+                    <div class="grid-label">
+                        <h3>Others</h3>
+                    </div>
+                    <div class="grid-content">
+                        <p>Others ...</p>
+                    </div>
+                    <div class="grid-label">
+                        <h3>Others</h3>
+                    </div>
+                    <div class="grid-content">
+                        <p>Others ...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+
+    <footer>
+        <div class="container centered">
+            <hr>
+            <div class="footer-text">Copyright &copy; 2020 William - 13518138</div>
+        </div>
+    </footer>
+
+    <script src="src/app.js"></script>
+
 </body>
+
 </html>
