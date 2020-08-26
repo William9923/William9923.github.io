@@ -15,109 +15,75 @@
     </noscript>
 
     <!-- Template Body for Javascript Injection -->
-    <header class="container centered">
-        <h1>William Profile's</h1>
-        <hr>
+    <header class="container sans">
+        <img class="page-cover-image" src="https://www.notion.so/images/page-cover/met_henri_rousseau_1907.jpg" style="object-position:center 26.349999999999994%">
+        <div class="page-header-icon page-header-icon-with-cover">
+            <span class="icon">🦜</span> 
+        </div>
+        <div class="page-title">
+            <h1>William Profile Resume</h1>
+        </div>
     </header>
 
-    <div class="container">
-        <blockquote class="centered">I&#x27;m William, currently a third year student as an Informatics Engineering
-            undergraduate of year
-            2018. Pleased to meet you 😄.
-        </blockquote>
+    <div class="container sans">
+        <div class="column-list">
+            <div class="column half-column">
+                <blockquote>I&#x27;m William, currently a third year student as an Informatics Engineering
+                    undergraduate of year
+                    2018. Pleased to meet you 😄.
+                </blockquote>
+            </div>
+
+            <div class="column half-column sans">
+                <h1>☎️ Contact information</h1>
+                <p>📧<a href="mailto:williamong1400@gmail.com">Email</a></p>
+                <p>💻<a href="https://www.linkedin.com/in/williamong9923">LinkedIn</a></p>
+                <p>⌨ <a href="http://github.com/William9923">Github</a></p>
+                <p>📙<a href="https://medium.com/@williamong1400">Medium</a></p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
         <div class="content-container">
             <div class="tab centered flex-wrapper">
-                <button id="nav-profile" class="tab-nav round" onclick="openTab(event,'tab-profile')">Profile</button>
-                <button id="nav-contact" class="tab-nav round" onclick="openTab(event,'tab-contact')">Contact
-                </button>
                 <button id="nav-education" class="tab-nav round"
-                    onclick="openTab(event,'tab-education')">Education</button>
+                    onclick="openTab(event,'tab-education')"><span class="sans"><b>Education</b></span></button>
+                <button id="nav-experience" class="tab-nav round"
+                onclick="openTab(event,'tab-experience')"><span class="sans"><b>Experience</b></span></button>
+                <button id="nav-project" class="tab-nav round"
+                onclick="openTab(event,'tab-project')"><span class="sans"><b>Project</b></span></button>
                 <button id="nav-achievement" class="tab-nav round"
-                    onclick="openTab(event,'tab-achievement')">Achievement</button>
-                <button id="nav-others" class="tab-nav round" onclick="openTab(event,'tab-others')">Others</button>
+                    onclick="openTab(event,'tab-achievement')"><span class="sans"><b>Achievement</b></span></button>
+                <button id="nav-articles" class="tab-nav round" onclick="openTab(event,'tab-articles')"><span class="sans"><b>Articles</b></span></button>
             </div>
-            <div id="tab-profile" class="tab-content">
-                <div class="grid-wrapper">
-                    <div class="grid-label">
-                        <span>Profile</span>
-                    </div>
-                    <div class="grid-content">
-                        Profile ...
-                    </div>
-                    <div class="grid-label">
-                        <span>Profile</span>
-                    </div>
-                    <div class="grid-content">
-                        Profile ...
-                    </div>
+            <div id="tab-experience" class="tab-content">
+                <h1><strong>👩🏻‍💻</strong> Work experience</h1>
+                <div id="content-experience">
                 </div>
             </div>
 
-            <div id="tab-contact" class="tab-content">
-                <div class="grid-wrapper">
-                    <div class="grid-label">
-                        <span>Contact Information</span>
-                    </div>
-                    <div class="grid-content">
-                        Contact Information ...
-                    </div>
-                    <div class="grid-label">
-                        <span>Contact Information</span>
-                    </div>
-                    <div class="grid-content">
-                        Contact Information ...
-                    </div>
+            <div id="tab-project" class="tab-content">
+                <h1><strong>💡</strong> Personal Project</h1>
+                <div id="content-project">
                 </div>
             </div>
 
             <div id="tab-education" class="tab-content">
-                <div class="grid-wrapper">
-                    <div class="grid-label">
-                        <span>Education</span>
-                    </div>
-                    <div class="grid-content">
-                        Education ...
-                    </div>
-                    <div class="grid-label">
-                        <span>Education</span>
-                    </div>
-                    <div class="grid-content">
-                        Education ...
-                    </div>
+                <h1><strong>📚</strong> Education</h1>
+                <div id="content-education">
                 </div>
             </div>
 
             <div id="tab-achievement" class="tab-content">
-                <div class="grid-wrapper">
-                    <div class="grid-label">
-                        <h3>Achievement</h3>
-                    </div>
-                    <div class="grid-content">
-                        <p>Achievement ...</p>
-                    </div>
-                    <div class="grid-label">
-                        <h3>Achievement</h3>
-                    </div>
-                    <div class="grid-content">
-                        <p>Achievement ...</p>
-                    </div>
+                <h1><strong>🛠</strong> Achievement</h1>
+                <div id="content-achievement">
                 </div>
             </div>
 
-            <div id="tab-others" class="tab-content">
-                <div class="grid-wrapper">
-                    <div class="grid-label">
-                        <h3>Others</h3>
-                    </div>
-                    <div class="grid-content">
-                        <p>Others ...</p>
-                    </div>
-                    <div class="grid-label">
-                        <h3>Others</h3>
-                    </div>
-                    <div class="grid-content">
-                        <p>Others ...</p>
-                    </div>
+            <div id="tab-articles" class="tab-content">
+                <h1><strong>📜</strong> Articles</h1>
+                <div id="content-articles">
                 </div>
             </div>
         </div>
@@ -129,7 +95,7 @@
     <footer>
         <div class="container centered">
             <hr>
-            <div class="footer-text">Copyright &copy; 2020 William - 13518138</div>
+            <div class="footer-text sans">Copyright &copy; 2020 <strong>William</strong> - <strong>13518138</strong></div>
         </div>
     </footer>
 
