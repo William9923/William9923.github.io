@@ -26,20 +26,20 @@
     </header>
 
     <div class="container sans">
-        <div class="column-list">
+        <div class="flex-wrapper">
             <div class="column half-column">
+                <br>
                 <blockquote>I&#x27;m William, currently a third year student as an Informatics Engineering
                     undergraduate of year
                     2018. Pleased to meet you 😄.
                 </blockquote>
             </div>
 
-            <div class="column half-column sans">
+            <div class="column half-column sans centered">
                 <h1>☎️ Contact information</h1>
-                <p>📧<a href="mailto:williamong1400@gmail.com">Email</a></p>
-                <p>💻<a href="https://www.linkedin.com/in/williamong9923">LinkedIn</a></p>
-                <p>⌨ <a href="http://github.com/William9923">Github</a></p>
-                <p>📙<a href="https://medium.com/@williamong1400">Medium</a></p>
+                <br>
+                <ul class="inline-list column-list" id="content-contact">
+                </ul>
             </div>
         </div>
         <br>
@@ -58,31 +58,31 @@
                 <button id="nav-articles" class="tab-nav round" onclick="openTab(event,'tab-articles')"><span class="sans"><b>Articles</b></span></button>
             </div>
             <div id="tab-experience" class="tab-content">
-                <h1><strong>👩🏻‍💻</strong> Work experience</h1>
+                <h1>👩🏻‍💻 Work experience</h1>
                 <div id="content-experience">
                 </div>
             </div>
 
             <div id="tab-project" class="tab-content">
-                <h1><strong>💡</strong> Personal Project</h1>
+                <h1>💡 Personal Project</h1>
                 <div id="content-project">
                 </div>
             </div>
 
             <div id="tab-education" class="tab-content">
-                <h1><strong>📚</strong> Education</h1>
+                <h1>📚 Education</h1>
                 <div id="content-education">
                 </div>
             </div>
 
             <div id="tab-achievement" class="tab-content">
-                <h1><strong>🛠</strong> Achievement</h1>
+                <h1>🛠 Achievement</h1>
                 <div id="content-achievement">
                 </div>
             </div>
 
             <div id="tab-articles" class="tab-content">
-                <h1><strong>📜</strong> Articles</h1>
+                <h1>📜 Articles</h1>
                 <div id="content-articles">
                 </div>
             </div>
@@ -95,10 +95,11 @@
     <footer>
         <div class="container centered">
             <hr>
-            <div class="footer-text sans">Copyright &copy; 2020 <strong>William</strong> - <strong>13518138</strong></div>
+            <div class="footer-text sans">Copyright &copy; 2020 <a href="https://william-profile.netlify.app/" target="_blank"><strong>William</strong></a> - <strong>13518138</strong></div>
         </div>
     </footer>
-
+    <script src="src/utility.js"></script>
+    <script src="src/data.js"></script>
     <script src="src/app.js"></script>
 
 </body>
