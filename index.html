@@ -14,88 +14,92 @@
         Please enable javascript in the browser!
     </noscript>
 
-    <!-- Template Body for Javascript Injection -->
-    <header class="container sans">
-        <img class="page-cover-image" src="https://www.notion.so/images/page-cover/met_henri_rousseau_1907.jpg" style="object-position:center 26.349999999999994%">
-        <div class="page-header-icon page-header-icon-with-cover">
-            <span class="icon">🦜</span> 
+    <div class="bg-image flex-wrapper">
+        <div class="center-flex-child">
+            <span class="title-text typewriter"></span>
         </div>
-        <div class="page-title">
-            <h1>William Profile Resume</h1>
-        </div>
-    </header>
-
-    <div class="container sans">
-        <div class="flex-wrapper">
-            <div class="column half-column">
-                <br>
-                <blockquote>I&#x27;m William, currently a third year student as an Informatics Engineering
-                    undergraduate of year
-                    2018. Pleased to meet you 😄.
-                </blockquote>
-            </div>
-
-            <div class="column half-column sans centered">
-                <h1>☎️ Contact information</h1>
-                <br>
-                <ul class="inline-list column-list" id="content-contact">
-                </ul>
-            </div>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="content-container">
-            <div class="tab centered flex-wrapper">
-                <button id="nav-education" class="tab-nav round"
-                    onclick="openTab(event,'tab-education')"><span class="sans"><b>Education</b></span></button>
-                <button id="nav-experience" class="tab-nav round"
-                onclick="openTab(event,'tab-experience')"><span class="sans"><b>Experience</b></span></button>
-                <button id="nav-project" class="tab-nav round"
-                onclick="openTab(event,'tab-project')"><span class="sans"><b>Project</b></span></button>
-                <button id="nav-achievement" class="tab-nav round"
-                    onclick="openTab(event,'tab-achievement')"><span class="sans"><b>Achievement</b></span></button>
-                <button id="nav-articles" class="tab-nav round" onclick="openTab(event,'tab-articles')"><span class="sans"><b>Articles</b></span></button>
-            </div>
-            <div id="tab-experience" class="tab-content">
-                <h1>👩🏻‍💻 Work experience</h1>
-                <div id="content-experience">
-                </div>
-            </div>
-
-            <div id="tab-project" class="tab-content">
-                <h1>💡 Personal Project</h1>
-                <div id="content-project">
-                </div>
-            </div>
-
-            <div id="tab-education" class="tab-content">
-                <h1>📚 Education</h1>
-                <div id="content-education">
-                </div>
-            </div>
-
-            <div id="tab-achievement" class="tab-content">
-                <h1>🛠 Achievement</h1>
-                <div id="content-achievement">
-                </div>
-            </div>
-
-            <div id="tab-articles" class="tab-content">
-                <h1>📜 Articles</h1>
-                <div id="content-articles">
-                </div>
-            </div>
-        </div>
+        
     </div>
 
+    <main>
+        <div class="header container sans">
+            <div class="page-title" id="title">
+                <h1>William Profile Resume <a class="link-symbol" href="#title" style="text-decoration: none;">📌</a> </h1>
+            </div>
+        </div>
+        <div class="container sans">
+            <div class="flex-wrapper">
+                <div class="column half-column">
+                    <br>
+                    <blockquote>I&#x27;m William, currently a third year student as an Informatics Engineering
+                        undergraduate of year
+                        2018. Pleased to meet you 😄.
+                    </blockquote>
+                </div>
 
+                <div class="column half-column sans centered">
+                    <h1>☎️ Contact information</h1>
+                    <br>
+                    <ul class="inline-list column-list" id="content-contact">
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="content-container">
+                <div class="tab centered flex-wrapper">
+                    <button id="nav-education" class="tab-nav round" onclick="openTab(event,'tab-education')"><span
+                            class="sans"><b>Education</b></span></button>
+                    <button id="nav-experience" class="tab-nav round" onclick="openTab(event,'tab-experience')"><span
+                            class="sans"><b>Experience</b></span></button>
+                    <button id="nav-project" class="tab-nav round" onclick="openTab(event,'tab-project')"><span
+                            class="sans"><b>Project</b></span></button>
+                    <button id="nav-achievement" class="tab-nav round" onclick="openTab(event,'tab-achievement')"><span
+                            class="sans"><b>Achievement</b></span></button>
+                    <button id="nav-articles" class="tab-nav round" onclick="openTab(event,'tab-articles')"><span
+                            class="sans"><b>Articles</b></span></button>
+                </div>
+                <div id="tab-experience" class="tab-content">
+                    <h1>👩🏻‍💻 Work experience</h1>
+                    <div id="content-experience">
+                    </div>
+                </div>
+
+                <div id="tab-project" class="tab-content">
+                    <h1>💡 Personal Project</h1>
+                    <div id="content-project">
+                    </div>
+                </div>
+
+                <div id="tab-education" class="tab-content">
+                    <h1>📚 Education</h1>
+                    <div id="content-education">
+                    </div>
+                </div>
+
+                <div id="tab-achievement" class="tab-content">
+                    <h1>🛠 Achievement</h1>
+                    <div id="content-achievement">
+                    </div>
+                </div>
+
+                <div id="tab-articles" class="tab-content">
+                    <h1>📜 Articles</h1>
+                    <div id="content-articles">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
     <br>
 
     <footer>
         <div class="container centered">
             <hr>
-            <div class="footer-text sans">Copyright &copy; 2020 <a href="https://william-profile.netlify.app/" target="_blank"><strong>William</strong></a> - <strong>13518138</strong></div>
+            <div class="footer-text sans">Copyright &copy; 2020 <a href="https://william-profile.netlify.app/"
+                    target="_blank"><strong>William</strong></a> - <strong>13518138</strong></div>
         </div>
     </footer>
     <script src="src/utility.js"></script>

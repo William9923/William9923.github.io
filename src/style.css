@@ -3,6 +3,28 @@
 @import "effect.css";
 /* Customizeable code for styling */
 
+.bg-image {
+    background-image: url(../assets/profile-edit.jpg);
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+    /* Background image is fixed in the viewport so that it doesn't move when 
+        the content's height is greater than the image's height */
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based
+        on the container's size */
+    background-size: cover;
+    height: 100%;
+}
+
+.center-flex-child{
+    margin: auto auto;
+    width: auto;
+    max-width: 750px;
+    color:black;
+}
+
 .block-color-gray {
     color: rgba(55, 53, 47, 0.6);
     fill: rgba(55, 53, 47, 0.6);
@@ -64,7 +86,8 @@
 /* Widget containerization template styling */
 
 .container {
-    margin: auto 0;
+    max-width: 150vh;
+    margin: 5vh auto;
 }
 
 .content-container {

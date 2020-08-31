@@ -50,6 +50,18 @@ const injectIconListTemplate = (content, id) => {
     document.getElementById(id).innerHTML = template;
 }
 
+var i = 0;
+var txt = 'Hi.. My Name is William';
+var speed = 125;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.querySelector(".title-text").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+
 const main = () => {
     // default section
     document.getElementById("nav-education").click();
@@ -63,4 +75,5 @@ const main = () => {
 }
 
 main();
+typeWriter();
 
