@@ -12,6 +12,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 /* Defining the custom max-width of the body | Can be customizeable by changing the max-width */
@@ -26,6 +27,7 @@ body {
 main {
     max-width: 150vh;
     margin: 5vh auto;
+    min-height: 100%;
 }
 
 ul, ol {

@@ -72,8 +72,9 @@ const main = () => {
     injectSectionListTemplate(articlesData, "content-articles");
     injectSectionWithSubstitle(achievementData, "content-achievement");
     injectIconListTemplate(contactData, "content-contact");
+    
 }
 
 main();
-typeWriter();
+setTimeout(typeWriter, 1500)
 
