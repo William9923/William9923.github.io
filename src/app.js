@@ -50,15 +50,11 @@ const injectIconListTemplate = (content, id) => {
     document.getElementById(id).innerHTML = template;
 }
 
-var i = 0;
-var txt = 'Hi.. My Name is William';
-var speed = 125;
-
-function typeWriter() {
+const typeWriter = (txt, speed, query, i) => {
     if (i < txt.length) {
-        document.querySelector(".title-text").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
+        document.querySelector(query).innerHTML += txt.charAt(i);
+        let j = ++i;
+        setTimeout(() => typeWriter(txt, speed, query, j), speed);
     }
 }
 
@@ -76,5 +72,5 @@ const main = () => {
 }
 
 main();
-setTimeout(typeWriter, 1500)
+setTimeout(() => typeWriter('Hi.. My Name is William', 150, '.title-text', 0), 1500)
 

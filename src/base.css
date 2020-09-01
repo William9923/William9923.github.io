@@ -45,6 +45,7 @@ h1, h2, h3 {
 h1 {
     font-size: 1.875rem;
     margin-top: 1.875rem;
+    margin-bottom: 1rem;
 }
 
 .header {
@@ -78,6 +79,7 @@ p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+
 
 a, a.visited {
     color: rgb(55, 53, 47);

@@ -8,6 +8,11 @@ const experienceData = [
         "title": "Graphics and Artificial Intelligence Laboratory Assistant",
         "subtitle": "Institut Teknologi Bandung, Bandung – August 2020 - present",
         "desc": []
+    },
+    {
+        "title": "Head of Data Arkavidia",
+        "subtitle": "Arkavidia, Bandung – July 2020 - present",
+        "desc": []
     }
 ];
 
@@ -33,12 +38,12 @@ const educationData = [
     {
         "title": "Undergraduate student in Computer Science",
         "subtitle": "2018 - present",
-        "desc": []
+        "desc": ["GPA : 3.96"]
     },
     {
         "title": "IPEKA Tomang High Schol",
         "subtitle": "2015 - 2018",
-        "desc": []
+        "desc": ["Top 3 student in Science Division"]
     }
 ];
 
@@ -85,6 +90,8 @@ const contactData = [
     }
 
 ];
+
+
 
 
 
