@@ -62,6 +62,6 @@ const linkTemplate = (link, content) => {
 
 const iconTemplate = (src, alt) => {
     return `
-        <img alt="${alt}" width="40vh" src="${src}"/>
+        <img class="contact-icon" alt="${alt}" width="40vh" src="${src}"/>
     `;
 }
