@@ -19,10 +19,12 @@
 }
 
 .center-flex-child{
+    text-align: center;
     margin: auto auto;
+    padding: 0 10vh;
     width: auto;
-    max-width: 750px;
-    color:black;
+    color:white;
+    overflow-wrap: break-word;
 }
 
 .block-color-gray {
