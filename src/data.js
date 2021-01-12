@@ -31,14 +31,25 @@ const projectData = [
         "title": "DuelFX",
         "link": "https://github.com/William9923/DuelFX",
         "desc": ['A simple turn-based card game battle created using JavaFX']
-    }
+    },
+    {
+        "title": "Strict Library",
+        "link": "https://typescript-express-demo.herokuapp.com",
+        "desc": ['A simple Express Typescript template for hackaton']
+    },
+    {
+        "title": "Halma Bot",
+        "link": "https://github.com/if13518138/MinesweeperAI",
+        "desc": ['A simple desktop application to play Halma games against bot using Minimax Algorithm with Local Search']
+    },
+
 ];
 
 const educationData = [
     {
         "title": "Undergraduate student in Computer Science",
         "subtitle": "2018 - present",
-        "desc": ["GPA : 3.96"]
+        "desc": ["GPA : 3.93"]
     },
     {
         "title": "IPEKA Tomang High Schol",
@@ -64,6 +75,16 @@ const achievementData = [
         "title": "Best Paper in National Data Summit (2019)",
         "subtitle": "Nov 2019 | National",
         "desc": ["Developed a new way to handle and process waste with deep learning."]
+    },
+    {
+        "title": "Top 15, National Data Science Competition Shopee (2020)",
+        "subtitle": "Nov 2020 | National",
+        "desc": ["Matching payment using fuzzy search\nCreate apriori algorithm to calculate market basket confidence"]
+    },
+    {
+        "title": "Finalist Anforcom UNDIP Data Mining (2020).",
+        "subtitle": "Oct 2020 | National",
+        "desc": ["Binary Classification dataset and reach 0.8 on F1 score using machine learning algorithm (Random Forest).\nMulticlass Classification earthquake dataset and reach 0.89 on F1 score using machine learning algorithm (CatBoost)"]
     }
 ];
 
