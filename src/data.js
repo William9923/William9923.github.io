@@ -49,7 +49,7 @@ const educationData = [
     {
         "title": "Undergraduate student in Computer Science",
         "subtitle": "2018 - present",
-        "desc": ["GPA : 3.93"]
+        "desc": ["GPA : APA LU LIAT\""]
     },
     {
         "title": "IPEKA Tomang High Schol",
