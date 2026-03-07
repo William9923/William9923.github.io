@@ -1,0 +1,14 @@
+[
+  {
+    "name": "snorlax.nvim",
+    "description": "My personal Neovim configuration.",
+    "url": "https://github.com/William9923/snorlax.nvim",
+    "tags": ["lua", "neovim"]
+  },
+  {
+    "name": "Another Cool Tool",
+    "description": "A description of another awesome tool I built.",
+    "url": "https://github.com/William9923",
+    "tags": ["go", "backend"]
+  }
+]

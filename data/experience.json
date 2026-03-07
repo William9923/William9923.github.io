@@ -1,0 +1,16 @@
+[
+  {
+    "period": "2023 - Present",
+    "role": "Software Engineer",
+    "company": "Gojek",
+    "companyUrl": "https://www.linkedin.com/company/gojek/",
+    "description": "Working on server side (backend) systems (Go, Python, Java, Lua)."
+  },
+  {
+    "period": "2021 - 2023",
+    "role": "Backend Software Engineer",
+    "company": "Shopee",
+    "companyUrl": "https://shopee.co.id",
+    "description": "Backend Software Engineer (> 1 year)."
+  }
+]
