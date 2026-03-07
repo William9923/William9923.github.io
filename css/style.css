@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -124,8 +125,7 @@ main {
 }
 
 section {
-  padding-top: 3rem;
-  margin-top: -3rem; /* Offset for sticky nav */
+  padding-top: 1rem;
   margin-bottom: 3rem;
 }
 

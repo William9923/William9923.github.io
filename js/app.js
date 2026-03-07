@@ -27,7 +27,10 @@ async function fetchExperience() {
     });
   } catch (err) {
     container.innerHTML = '<li><p>Could not load experience timeline.</p></li>';
-    console.error(err);
+    // Only log actual code errors, not expected API 422 errors due to empty RSS feeds
+    if (err.message !== 'Failed to fetch blog posts') {
+      console.error(err);
+    }
   }
 }
 
@@ -61,7 +64,7 @@ async function fetchProjects() {
     });
   } catch (err) {
     container.innerHTML = '<p>Could not load projects list.</p>';
-    console.error(err);
+    if (err.message !== 'Failed to fetch blog posts') { console.error(err); }
   }
 }
 
@@ -105,7 +108,10 @@ async function fetchBlogPosts() {
         <p>Couldn't fetch latest posts automatically. 
         <a href="https://williamong.bearblog.dev" target="_blank">Visit my blog directly</a>.</p>
       </li>`;
-    console.error(err);
+    // Only log actual code errors, not expected API 422 errors due to empty RSS feeds
+    if (err.message !== 'Failed to fetch blog posts') {
+      console.error(err);
+    }
   }
 }
 
