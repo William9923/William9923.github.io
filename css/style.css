@@ -1,4 +1,4 @@
-/* Variables for System Auto Theme */
+/* Variables for Light Theme */
 :root {
   --bg: #ffffff;
   --text: #1a1a1a;
@@ -9,25 +9,18 @@
   --bg-secondary: #f9f9f9;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111111;
-    --text: #eeeeee;
-    --link: #55b5db;
-    --link-hover: #88cce4;
-    --border: #333333;
-    --meta: #999999;
-    --bg-secondary: #1a1a1a;
-  }
-}
 
 /* Base Styles */
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "SamsungOne", Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
@@ -163,23 +156,33 @@ h2 {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  border-left: 2px solid var(--border);
-  padding-left: 20px;
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 0;
+  left: 6px; /* Centers exactly on the 14px dot */
+  width: 2px;
+  background-color: var(--border);
 }
 .timeline li {
   margin-bottom: 25px;
   position: relative;
+  padding-left: 28px;
 }
 .timeline li::before {
   content: "";
   position: absolute;
-  left: -26px; /* 20px padding + 2px border / 2 + dot size radius */
-  top: 5px;
-  width: 10px;
-  height: 10px;
+  left: 0;
+  top: 6px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: var(--bg);
-  border: 2px solid var(--text);
+  border: 2px solid var(--border);
+  z-index: 1;
 }
 .timeline-date {
   font-size: 0.85rem;
