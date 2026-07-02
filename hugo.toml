@@ -1,0 +1,31 @@
+baseURL = 'https://williamong.vercel.app/'
+locale = 'en-US'
+title = 'William Ong'
+theme = 'hugo-bearblog'
+author = 'William Ong'
+copyright = 'Copyright © 2026, William Ong.'
+enableRobotsTXT = true
+
+disableKinds = ['taxonomy']
+ignoreErrors = ['error-disable-taxonomy']
+
+[permalinks]
+  blog = '/:slug/'
+
+[params]
+  description = "William Ong's personal website."
+  title = 'William Ong'
+
+[menu]
+  [[menu.main]]
+    name = 'About'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'Writing'
+    url = '/blog/'
+    weight = 20
+  [[menu.main]]
+    name = 'Misc'
+    url = '/misc/'
+    weight = 30
