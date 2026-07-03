@@ -11,7 +11,7 @@ enableRobotsTXT = true
     style = 'monokai'
     lineNos = false
     codeFences = true
-    noClasses = false
+    noClasses = true
 
 [permalinks]
   blog = '/:slug/'
