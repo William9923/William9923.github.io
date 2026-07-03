@@ -132,3 +132,7 @@ For the data source, I mainly use 2 types of data sources :
 *   External Data (Flat Files), such as [Cities Map](https://simplemaps.com/data/id-cities) and [Datetime in excel](https://blog.crossjoin.co.uk/2015/06/26/automatically-generating-date-dimension-tables-in-excel-2016-power-pivot/)
 
 That’s the end of the concept that we use when implementing data engineering part. For the implementation itself, please kindly check the Part I-II : Data Warehouse Modelling Implementation. Stay safe and stay grinding 🔥!!
+
+---
+
+> **Note:** This is one of my most viewed Medium posts. To continue the series, check out [Part I-II: Data Warehouse Modelling Implementation](https://medium.com/@williamong1400/part-i-ii-data-warehouse-modelling-implementation-fb80f0cb7127).
