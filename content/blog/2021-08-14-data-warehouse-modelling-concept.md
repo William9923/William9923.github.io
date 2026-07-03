@@ -36,7 +36,7 @@ What is the **pipeline structure** of this project?
 
 *Pipeline Simplify*
 
-Above picture show the outline on what we are going to do to design & model **Data Warehouse** that we are going to use for **Part II**&**Part III**.
+Above picture show the outline on what we are going to do to design & model **Data Warehouse** that we are going to use for **Part II** & **Part III**.
 
 ## Database
 
@@ -70,9 +70,9 @@ After we map the relationship, we can make create & load the data into database.
 
 > The **data warehouse** is a specific infrastructure element that provides down-the-line users, including data analysts and data scientists, access to data that has been shaped to conform to business rules and is stored in an easy-to-query format
 
-The data must conform to specific business rules that validate quality. Then it is stored in a denormalized structure — _that means storing together pieces of information that will likely be queried together_. This serves to increase performance by decreasing the complexity of queries required to get data out of the warehouse (i.e., by reducing the number of data joins).
+The data must conform to specific business rules that validate quality. Then it is stored in a denormalized structure — that means storing together pieces of information that will likely be queried together. This serves to increase performance by decreasing the complexity of queries required to get data out of the warehouse (i.e., by reducing the number of data joins).
 
-In order to answer the business question that we have (will be explained in **Part II**), we need to create a data warehouse schema that can provide information that we will use for **Part II**&**Part III**. We will use **star schema** for our warehouse. The granularity for our warehouse are **1 product for each order**, which means that for each row in _Fact Order Item_ has the details for 1 product from an order.
+In order to answer the business question that we have (will be explained in **Part II**), we need to create a data warehouse schema that can provide information that we will use for **Part II** & **Part III**. We will use **star schema** for our warehouse. The granularity for our warehouse are **1 product for each order**, which means that for each row in _Fact Order Item_ has the details for 1 product from an order.
 
 Before we start, I would like to give an overview about concepts that we will using to model the data warehouse :
 
@@ -92,7 +92,7 @@ Star schema design theory refers to two common SCD types: Type 1 and Type 2. A d
 
 ### Type 2 SCD
 
-A **Type 2****SCD** supports versioning of dimension members. If the source system doesn’t store versions, then it’s usually the data warehouse load process that detects changes, and appropriately manages the change in a dimension table. In this case, the dimension table must use a surrogate key to provide a unique reference to a _version_ of the dimension member. It also includes columns that define the date range validity of the version (for example, **StartDate** and **EndDate**) and possibly a flag column (for example, **IsCurrent**) to easily filter by current dimension members.
+A **Type 2** **SCD** supports versioning of dimension members. If the source system doesn’t store versions, then it’s usually the data warehouse load process that detects changes, and appropriately manages the change in a dimension table. In this case, the dimension table must use a surrogate key to provide a unique reference to a _version_ of the dimension member. It also includes columns that define the date range validity of the version (for example, **StartDate** and **EndDate**) and possibly a flag column (for example, **IsCurrent**) to easily filter by current dimension members.
 
 So, to create the data warehouse with star schema, we need **dimension**and **fact table**
 
@@ -112,13 +112,13 @@ To connect data between fact table and dimension table, we need a surrogate key.
 
 ![Image 9](https://miro.medium.com/v2/resize:fit:547/1*q--ruDe3SvTLVuWjztYI1w.jpeg)
 
-Surrogate Key for each Dimension Table
+*Surrogate Key for each Dimension Table*
 
 After we prepared all of the dimension and fact table, here are the end result (schema) for our data warehouse modelling.
 
 ![Image 10](https://miro.medium.com/v2/resize:fit:700/1*e3mqXFqBZfGCkHWLAAUIrQ.png)
 
-Data Warehouse Schema (Simplified)
+*Data Warehouse Schema (Simplified)*
 
 ## ETL Pipeline
 
