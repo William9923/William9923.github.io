@@ -6,6 +6,13 @@
     <a href="{{ "blog" | relURL }}">Remove filter</a>
   </small>
   {{ end }}
+  {{ if eq .Kind "taxonomy" }}
+  <ul>
+    {{ range .Pages }}
+    <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+    {{ end }}
+  </ul>
+  {{ else }}
   <ul class="blog-posts">
     {{ range .Pages }}
     <li>
@@ -24,6 +31,7 @@
     </li>
     {{ end }}
   </ul>
+  {{ end }}
   {{ if not .Data.Singular }}
   <small>
     <div>

@@ -11,7 +11,7 @@ original_url = 'https://williamong.netlify.app/posts/seperate-application-and-da
 
 One of the applications of **clean architecture** is [Hexagonal Architecture](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749), an approach that explicitly distinguishes layers, adapters, and so on. This approach has gained love among Go developers because it does not require complex abstractions or intricate patterns and does not contradict complicated language idiom - the so-called Go way. Have you ever used **transactions** in a hexagonal architecture using Go? How do you keep the application layer and database adapter layer separate? Have you occurred a code similar to the like below?
 
-```
+```go
 import (
 	"context"
 	"database/sql"
@@ -46,7 +46,7 @@ First of all why is context.Value() needed? The short answer to that by using co
 
 Back to the topic, so what is the connection between context and transaction? How does it solve the problem stated before? Well after a lot of digging around, I found a pretty good solution…
 
-```
+```go
 import (
 	"context"
 	"database/sql"
@@ -68,7 +68,7 @@ func ExtractTx(ctx context.Context) *sql.Tx {
 
 So, instead of passing around the transaction object around from business logic to the adapter code (thus polutting the business layer with adapter code), we inject the transaction into the context. Here the things, the context that were injected with transaction then could be used in others database adapter code. Look at below code on how I use the transaction injected in the context for the database adapter code.
 
-```
+```go
 func (repo userRepo) InsertUser(ctx context.Context, user model.User) error {
 
 	tx := internal_mysql.ExtractTx(ctx)
@@ -102,7 +102,7 @@ Notice that we don’t need to pass around the transaction object to the databas
 
 While that solves the issue of separation between business logic and database adapter layer, we still had a lot of code in the business logic that need to call **BEGIN**, **COMMIT**, and/or **ROLLBACK** to start / end the transaction. An example for that could be seen in below code.
 
-```
+```go
 func (s *transferService) Transfer(ctx context.Context, param DoTransferParam) error {
 
 	var needRollback bool = false
@@ -162,7 +162,7 @@ func (s *transferService) Transfer(ctx context.Context, param DoTransferParam) e
 
 It kinds of messy. Could we simplify it in Go? We could! We can wrap it with a wrapper func that called those command separately, like in the below code.
 
-```
+```go
 func (repo transactionManager) WithinTransaction(ctx context.Context, fn dao.TransactionFn) error {
 	var needRollback bool = false
 
@@ -193,7 +193,7 @@ func (repo transactionManager) WithinTransaction(ctx context.Context, fn dao.Tra
 
 Now we can define the business logic without the need to think about transaction, like code below…
 
-```
+```go
 func (s *transferService) TransferV2(ctx context.Context, param DoTransferParam) error {
 	return s.transactionManager.WithinTransaction(ctx, func(trxCtx context.Context) error {
 		return s.transfer(trxCtx, param)

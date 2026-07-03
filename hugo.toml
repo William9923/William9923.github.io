@@ -6,8 +6,12 @@ author = 'William Ong'
 copyright = 'Copyright © 2026, William Ong.'
 enableRobotsTXT = true
 
-disableKinds = ['taxonomy']
-ignoreErrors = ['error-disable-taxonomy']
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    lineNos = false
+    codeFences = true
+    noClasses = false
 
 [permalinks]
   blog = '/:slug/'
