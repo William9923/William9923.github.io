@@ -19,6 +19,7 @@ enableRobotsTXT = true
 [params]
   description = "William Ong's personal website."
   title = 'William Ong'
+  favicon = 'images/favicon.png'
 
 [menu]
   [[menu.main]]
